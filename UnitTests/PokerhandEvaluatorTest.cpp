@@ -6,13 +6,11 @@ public:
     PokerhandEvaluator evaluator;
 };
 
-
 TEST_F(PokerhandEvaluatorTest, FindsHighcardOutOfTwo) {
     EXPECT_EQ("C3", evaluator.evaluate("C2 C3"));
     EXPECT_EQ("C4", evaluator.evaluate("C2 C4"));
     EXPECT_EQ("C4", evaluator.evaluate("C4 C2"));
 }
-
 
 TEST_F(PokerhandEvaluatorTest, FindsHighcardIgnoringColor) {
     EXPECT_EQ("C3", evaluator.evaluate("H2 C3"));

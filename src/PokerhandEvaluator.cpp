@@ -1,4 +1,11 @@
 #include "PokerhandEvaluator.h"
+#include "HighcardRule.h"
+#include "PairRule.h"
+
+PokerhandEvaluator::PokerhandEvaluator() {
+	rules.push_back(new PairRule());
+	rules.push_back(new HighcardRule());
+}
 
 string PokerhandEvaluator::evaluate(string hand) {
     vector<Card> cards = CardsFromString(hand);
@@ -9,45 +16,22 @@ string PokerhandEvaluator::evaluate(string hand) {
 vector<Card> PokerhandEvaluator::evaluateCards(vector<Card> cards) {
     vector<Card> evaluated;
 
-    evaluated = findPair(cards);
-
-    if (evaluated.empty()) {
-        Card highCard = findHighcard(cards);
-		evaluated.push_back(highCard);
-    }
+	vector<PokerRule*>::iterator it = rules.begin();
+	while (evaluated.empty() && it != rules.end()) {
+		PokerRule *rule = *it++;
+		evaluated = rule->evaluateRule(cards);
+	}
 
     return evaluated;
 }
 
-Card PokerhandEvaluator::findHighcard(vector<Card> cards) {
-	sort(cards.begin(), cards.end());
-	Card highCard = cards.back();
-	return highCard;
+vector<Card> PokerhandEvaluator::findHighcard(vector<Card> cards) {
+	PokerRule *rule = new HighcardRule();
+	return rule->evaluateRule(cards);
 }
 
 vector<Card> PokerhandEvaluator::findPair(vector<Card> cards) {
-    map<int, vector<Card>> rankHistogram = makeRankHistogram(cards);
-    vector<Card> pair = findCardsWithSameRankOfCount(2, rankHistogram);
-    return pair;
+	PokerRule *rule = new PairRule();
+	return rule->evaluateRule(cards);
 }
 
-map<int, vector<Card>> PokerhandEvaluator::makeRankHistogram(vector<Card> cards) {
-    map<int, vector<Card>> histogram;
-    for (auto &&card : cards) {
-        int rank = card.getRank();
-        vector<Card> rankCards = histogram[rank];
-        rankCards.push_back(card);
-        histogram[rank] = rankCards;
-    }
-    return histogram;
-}
-
-vector<Card> PokerhandEvaluator::findCardsWithSameRankOfCount(int count, map<int, vector<Card>> histogram) {
-    for (map<int, vector<Card>>::iterator it = histogram.begin(); it != histogram.end(); ++it) {
-        vector<Card> cards = it->second;
-        if (cards.size() == count) {
-            return cards;
-        }
-    }
-    return vector<Card>();
-};

@@ -20,6 +20,11 @@
 		26D38E9A1DEC3A6F00B375E8 /* PokerhandEvaluator.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D38E901DEC3A6F00B375E8 /* PokerhandEvaluator.h */; };
 		26D38E9D1DEC3A6F00B375E8 /* StringHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D38E931DEC3A6F00B375E8 /* StringHelper.cpp */; };
 		26D38E9E1DEC3A6F00B375E8 /* StringHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D38E941DEC3A6F00B375E8 /* StringHelper.h */; };
+		26D38EA21DEC3C1B00B375E8 /* PokerRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D38EA11DEC3C1B00B375E8 /* PokerRule.h */; };
+		26D38EA51DEC3C5F00B375E8 /* HighcardRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D38EA31DEC3C5F00B375E8 /* HighcardRule.cpp */; };
+		26D38EA61DEC3C5F00B375E8 /* HighcardRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D38EA41DEC3C5F00B375E8 /* HighcardRule.h */; };
+		26D38EA91DEC3E0400B375E8 /* PairRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D38EA71DEC3E0400B375E8 /* PairRule.cpp */; };
+		26D38EAA1DEC3E0400B375E8 /* PairRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D38EA81DEC3E0400B375E8 /* PairRule.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +120,11 @@
 		26D38E901DEC3A6F00B375E8 /* PokerhandEvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokerhandEvaluator.h; sourceTree = "<group>"; };
 		26D38E931DEC3A6F00B375E8 /* StringHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringHelper.cpp; sourceTree = "<group>"; };
 		26D38E941DEC3A6F00B375E8 /* StringHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringHelper.h; sourceTree = "<group>"; };
+		26D38EA11DEC3C1B00B375E8 /* PokerRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokerRule.h; sourceTree = "<group>"; };
+		26D38EA31DEC3C5F00B375E8 /* HighcardRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HighcardRule.cpp; sourceTree = "<group>"; };
+		26D38EA41DEC3C5F00B375E8 /* HighcardRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighcardRule.h; sourceTree = "<group>"; };
+		26D38EA71DEC3E0400B375E8 /* PairRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PairRule.cpp; sourceTree = "<group>"; };
+		26D38EA81DEC3E0400B375E8 /* PairRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairRule.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +201,11 @@
 				26D38E931DEC3A6F00B375E8 /* StringHelper.cpp */,
 				26D38E941DEC3A6F00B375E8 /* StringHelper.h */,
 				26D38E731DEC31F300B375E8 /* dummy.cpp */,
+				26D38EA11DEC3C1B00B375E8 /* PokerRule.h */,
+				26D38EA31DEC3C5F00B375E8 /* HighcardRule.cpp */,
+				26D38EA41DEC3C5F00B375E8 /* HighcardRule.h */,
+				26D38EA71DEC3E0400B375E8 /* PairRule.cpp */,
+				26D38EA81DEC3E0400B375E8 /* PairRule.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -204,7 +219,10 @@
 			files = (
 				26D38E9E1DEC3A6F00B375E8 /* StringHelper.h in Headers */,
 				26D38E9A1DEC3A6F00B375E8 /* PokerhandEvaluator.h in Headers */,
+				26D38EAA1DEC3E0400B375E8 /* PairRule.h in Headers */,
+				26D38EA21DEC3C1B00B375E8 /* PokerRule.h in Headers */,
 				26D38E961DEC3A6F00B375E8 /* Card.h in Headers */,
+				26D38EA61DEC3C5F00B375E8 /* HighcardRule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,9 +368,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				26D38E741DEC31F300B375E8 /* dummy.cpp in Sources */,
+				26D38EA91DEC3E0400B375E8 /* PairRule.cpp in Sources */,
 				26D38E9D1DEC3A6F00B375E8 /* StringHelper.cpp in Sources */,
 				26D38E991DEC3A6F00B375E8 /* PokerhandEvaluator.cpp in Sources */,
 				26D38E951DEC3A6F00B375E8 /* Card.cpp in Sources */,
+				26D38EA51DEC3C5F00B375E8 /* HighcardRule.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +512,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = UDWCB532ZV;
-				HEADER_SEARCH_PATHS = $SRCROOT/UnitTests/googletest/googletest/include;
+				HEADER_SEARCH_PATHS = (
+					$SRCROOT/UnitTests/googletest/googletest/include,
+					$SRCROOT/UnitTests/googletest/googlemock/include,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -501,7 +524,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = UDWCB532ZV;
-				HEADER_SEARCH_PATHS = $SRCROOT/UnitTests/googletest/googletest/include;
+				HEADER_SEARCH_PATHS = (
+					$SRCROOT/UnitTests/googletest/googletest/include,
+					$SRCROOT/UnitTests/googletest/googlemock/include,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
