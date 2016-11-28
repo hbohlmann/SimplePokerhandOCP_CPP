@@ -1,48 +1,45 @@
-#ifndef Card_hpp
-#define Card_hpp
+#ifndef SIMPLEPOKERHANDOCP_CARD_H
+#define SIMPLEPOKERHANDOCP_CARD_H
+
 
 #include <string>
 #include <vector>
 
 struct Card {
-private:
-	std::string _value;
-	
-public:
-	Card(std::string value) { _value = value; }
-	std::string getValue() { return _value; }
-	
-	const int getRank() const {
-		std::string rankString = _value.substr(1);
-		if (rankString == "J") {
-			return 11;
-		}
-		if (rankString == "Q") {
-			return 12;
-		}
-		if (rankString == "K") {
-			return 13;
-		}
-		if (rankString == "A") {
-			return 14;
-		}
-		return std::stoi(rankString);
-	}
-	
-	bool operator< (const Card &other) const {
-		return getRank() < other.getRank();
-	}
-	
-	bool operator> (const Card &other) const {
-		return getRank() > other.getRank();
-	}
-	
-	bool operator== (const Card &other) const {
-		return getRank() == other.getRank();
-	}}
-;
+    std::string value;
 
-std::vector<Card> CardsFromString(std::string hand);
+    bool operator==(const Card &other) const {
+        return (value == other.value);
+    }
 
+    bool operator<(const Card &other) const {
+        return getRank() < other.getRank();
+    }
 
-#endif /* Card_hpp */
+    bool operator>(const Card &other) const {
+        return getRank() > other.getRank();
+    }
+
+    int getRank() const {
+        std::string rankString = value.substr(1);
+        if (rankString == "A") {
+            return 14;
+        }
+        if (rankString == "K") {
+            return 13;
+        }
+        if (rankString == "Q") {
+            return 12;
+        }
+        if (rankString == "J") {
+            return 11;
+        }
+        return std::stoi(rankString);
+    }
+
+};
+
+std::vector<Card> CardsFromString(std::string cards);
+std::string CardsToString(std::vector<Card>);
+
+#endif //SIMPLEPOKERHANDOCP_CARD_H

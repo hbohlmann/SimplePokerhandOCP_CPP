@@ -11,14 +11,15 @@
 		26D38E6D1DEC30FD00B375E8 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D38E5E1DEC30D700B375E8 /* libgtest.a */; };
 		26D38E6E1DEC310100B375E8 /* libSimplePokerhandsOCP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D38E3D1DEC307600B375E8 /* libSimplePokerhandsOCP.a */; };
 		26D38E741DEC31F300B375E8 /* dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D38E731DEC31F300B375E8 /* dummy.cpp */; };
-		26D38E791DEC322000B375E8 /* SimplePokerhandEvaluator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D38E751DEC322000B375E8 /* SimplePokerhandEvaluator.cpp */; };
-		26D38E7A1DEC322000B375E8 /* SimplePokerhandEvaluator.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D38E761DEC322000B375E8 /* SimplePokerhandEvaluator.h */; };
-		26D38E7B1DEC322000B375E8 /* StringHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D38E771DEC322000B375E8 /* StringHelper.cpp */; };
-		26D38E7C1DEC322000B375E8 /* StringHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D38E781DEC322000B375E8 /* StringHelper.h */; };
-		26D38E7E1DEC323200B375E8 /* SimplePokerhandsEvaluatorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D38E7D1DEC323200B375E8 /* SimplePokerhandsEvaluatorTest.cpp */; };
-		26D38E811DEC383D00B375E8 /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D38E7F1DEC383D00B375E8 /* Card.cpp */; };
-		26D38E821DEC383D00B375E8 /* Card.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D38E801DEC383D00B375E8 /* Card.h */; };
-		26D38E841DEC384C00B375E8 /* CardTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D38E831DEC384C00B375E8 /* CardTest.cpp */; };
+		26D38E881DEC3A5800B375E8 /* CardTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D38E851DEC3A5800B375E8 /* CardTest.cpp */; };
+		26D38E891DEC3A5800B375E8 /* PokerhandEvaluatorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D38E861DEC3A5800B375E8 /* PokerhandEvaluatorTest.cpp */; };
+		26D38E8A1DEC3A5800B375E8 /* StringHelperTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D38E871DEC3A5800B375E8 /* StringHelperTest.cpp */; };
+		26D38E951DEC3A6F00B375E8 /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D38E8B1DEC3A6F00B375E8 /* Card.cpp */; };
+		26D38E961DEC3A6F00B375E8 /* Card.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D38E8C1DEC3A6F00B375E8 /* Card.h */; };
+		26D38E991DEC3A6F00B375E8 /* PokerhandEvaluator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D38E8F1DEC3A6F00B375E8 /* PokerhandEvaluator.cpp */; };
+		26D38E9A1DEC3A6F00B375E8 /* PokerhandEvaluator.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D38E901DEC3A6F00B375E8 /* PokerhandEvaluator.h */; };
+		26D38E9D1DEC3A6F00B375E8 /* StringHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D38E931DEC3A6F00B375E8 /* StringHelper.cpp */; };
+		26D38E9E1DEC3A6F00B375E8 /* StringHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D38E941DEC3A6F00B375E8 /* StringHelper.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,14 +106,15 @@
 		26D38E4A1DEC308A00B375E8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		26D38E4F1DEC30D700B375E8 /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = googletest/googletest/xcode/gtest.xcodeproj; sourceTree = "<group>"; };
 		26D38E731DEC31F300B375E8 /* dummy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dummy.cpp; sourceTree = "<group>"; };
-		26D38E751DEC322000B375E8 /* SimplePokerhandEvaluator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimplePokerhandEvaluator.cpp; sourceTree = "<group>"; };
-		26D38E761DEC322000B375E8 /* SimplePokerhandEvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePokerhandEvaluator.h; sourceTree = "<group>"; };
-		26D38E771DEC322000B375E8 /* StringHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringHelper.cpp; sourceTree = "<group>"; };
-		26D38E781DEC322000B375E8 /* StringHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringHelper.h; sourceTree = "<group>"; };
-		26D38E7D1DEC323200B375E8 /* SimplePokerhandsEvaluatorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimplePokerhandsEvaluatorTest.cpp; sourceTree = "<group>"; };
-		26D38E7F1DEC383D00B375E8 /* Card.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
-		26D38E801DEC383D00B375E8 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
-		26D38E831DEC384C00B375E8 /* CardTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CardTest.cpp; sourceTree = "<group>"; };
+		26D38E851DEC3A5800B375E8 /* CardTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CardTest.cpp; sourceTree = "<group>"; };
+		26D38E861DEC3A5800B375E8 /* PokerhandEvaluatorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PokerhandEvaluatorTest.cpp; sourceTree = "<group>"; };
+		26D38E871DEC3A5800B375E8 /* StringHelperTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringHelperTest.cpp; sourceTree = "<group>"; };
+		26D38E8B1DEC3A6F00B375E8 /* Card.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
+		26D38E8C1DEC3A6F00B375E8 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		26D38E8F1DEC3A6F00B375E8 /* PokerhandEvaluator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PokerhandEvaluator.cpp; sourceTree = "<group>"; };
+		26D38E901DEC3A6F00B375E8 /* PokerhandEvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokerhandEvaluator.h; sourceTree = "<group>"; };
+		26D38E931DEC3A6F00B375E8 /* StringHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringHelper.cpp; sourceTree = "<group>"; };
+		26D38E941DEC3A6F00B375E8 /* StringHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringHelper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				26D38E3E1DEC307600B375E8 /* Products */,
-				26D38E491DEC308A00B375E8 /* UnitTests */,
 				26D38E721DEC31BE00B375E8 /* src */,
+				26D38E491DEC308A00B375E8 /* UnitTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,8 +158,9 @@
 		26D38E491DEC308A00B375E8 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				26D38E831DEC384C00B375E8 /* CardTest.cpp */,
-				26D38E7D1DEC323200B375E8 /* SimplePokerhandsEvaluatorTest.cpp */,
+				26D38E851DEC3A5800B375E8 /* CardTest.cpp */,
+				26D38E861DEC3A5800B375E8 /* PokerhandEvaluatorTest.cpp */,
+				26D38E871DEC3A5800B375E8 /* StringHelperTest.cpp */,
 				26D38E4F1DEC30D700B375E8 /* gtest.xcodeproj */,
 				26D38E4A1DEC308A00B375E8 /* main.cpp */,
 			);
@@ -181,12 +184,12 @@
 		26D38E721DEC31BE00B375E8 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				26D38E7F1DEC383D00B375E8 /* Card.cpp */,
-				26D38E801DEC383D00B375E8 /* Card.h */,
-				26D38E751DEC322000B375E8 /* SimplePokerhandEvaluator.cpp */,
-				26D38E761DEC322000B375E8 /* SimplePokerhandEvaluator.h */,
-				26D38E771DEC322000B375E8 /* StringHelper.cpp */,
-				26D38E781DEC322000B375E8 /* StringHelper.h */,
+				26D38E8B1DEC3A6F00B375E8 /* Card.cpp */,
+				26D38E8C1DEC3A6F00B375E8 /* Card.h */,
+				26D38E8F1DEC3A6F00B375E8 /* PokerhandEvaluator.cpp */,
+				26D38E901DEC3A6F00B375E8 /* PokerhandEvaluator.h */,
+				26D38E931DEC3A6F00B375E8 /* StringHelper.cpp */,
+				26D38E941DEC3A6F00B375E8 /* StringHelper.h */,
 				26D38E731DEC31F300B375E8 /* dummy.cpp */,
 			);
 			path = src;
@@ -199,9 +202,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26D38E7A1DEC322000B375E8 /* SimplePokerhandEvaluator.h in Headers */,
-				26D38E821DEC383D00B375E8 /* Card.h in Headers */,
-				26D38E7C1DEC322000B375E8 /* StringHelper.h in Headers */,
+				26D38E9E1DEC3A6F00B375E8 /* StringHelper.h in Headers */,
+				26D38E9A1DEC3A6F00B375E8 /* PokerhandEvaluator.h in Headers */,
+				26D38E961DEC3A6F00B375E8 /* Card.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,10 +349,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26D38E791DEC322000B375E8 /* SimplePokerhandEvaluator.cpp in Sources */,
 				26D38E741DEC31F300B375E8 /* dummy.cpp in Sources */,
-				26D38E7B1DEC322000B375E8 /* StringHelper.cpp in Sources */,
-				26D38E811DEC383D00B375E8 /* Card.cpp in Sources */,
+				26D38E9D1DEC3A6F00B375E8 /* StringHelper.cpp in Sources */,
+				26D38E991DEC3A6F00B375E8 /* PokerhandEvaluator.cpp in Sources */,
+				26D38E951DEC3A6F00B375E8 /* Card.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,9 +360,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26D38E7E1DEC323200B375E8 /* SimplePokerhandsEvaluatorTest.cpp in Sources */,
+				26D38E8A1DEC3A5800B375E8 /* StringHelperTest.cpp in Sources */,
 				26D38E4B1DEC308A00B375E8 /* main.cpp in Sources */,
-				26D38E841DEC384C00B375E8 /* CardTest.cpp in Sources */,
+				26D38E891DEC3A5800B375E8 /* PokerhandEvaluatorTest.cpp in Sources */,
+				26D38E881DEC3A5800B375E8 /* CardTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

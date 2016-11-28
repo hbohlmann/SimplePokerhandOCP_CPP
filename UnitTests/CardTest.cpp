@@ -1,31 +1,23 @@
-#include "gtest/gtest.h"
+#import "gtest/gtest.h"
 #include "Card.h"
-#include <vector>
 
-struct CardTest : testing::Test {
-	
-};
-
-TEST_F(CardTest, CanBeBuildFromString) {
-	Card card("C3");
-	ASSERT_EQ(card.getValue(), "C3");
+TEST(CardTest, CreateCardsFromString) {
+    std::vector<Card> cards = CardsFromString("C2 C3");
+    Card c2 = {"C2"};
+    Card c3 = {"C3"};
+    EXPECT_EQ(c2, cards[0]);
+    EXPECT_EQ(c3, cards[1]);
 }
 
-TEST_F(CardTest, CanBeCompared) {
-	Card card1("C2");
-	Card card2("C3");
-	ASSERT_TRUE(card1 < card2);
-	ASSERT_TRUE(card2 > card1);
-	ASSERT_TRUE(!(card2 == card1));
+TEST(CardTest, CreateStringFromCards) {
+    std::vector<Card> cards = CardsFromString("C2 C3");
+    std::string string = CardsToString(cards);
+    EXPECT_EQ("C2 C3", string);
 }
 
-TEST_F(CardTest, IgnoresColorWhenCompared) {
-	Card card1("H2");
-	Card card2("C3");
-	ASSERT_TRUE(card1 < card2);
-}
-
-TEST_F(CardTest, CanBeBuildFromStrings) {
-	std::vector<Card> cards = CardsFromString("C2 C3");
-	ASSERT_EQ(cards.size(), 2);
+TEST(CardTest, ComparesCardsByRank) {
+    Card c2 = {"C2"};
+    Card c3 = {"C3"};
+    EXPECT_LT(c2, c3);
+    EXPECT_GT(c3, c2);
 }

@@ -1,11 +1,9 @@
-#ifndef StringHelper_hpp
-#define StringHelper_hpp
+#ifndef SIMPLEPOKERHANDSRP_STRINGHELPER_H
+#define SIMPLEPOKERHANDSRP_STRINGHELPER_H
 
 #include <string>
 #include <vector>
 
-namespace StringHelper {
-	unsigned long split(const std::string &txt, std::vector<std::string> &strs, char separator = ' ');
-}
+unsigned long split(const std::string &txt, std::vector<std::string> &strs);
 
-#endif /* StringHelper_hpp */
+#endif //SIMPLEPOKERHANDSRP_STRINGHELPER_H
